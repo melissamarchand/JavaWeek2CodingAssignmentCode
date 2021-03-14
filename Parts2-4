@@ -1,0 +1,28 @@
+package week2CodingAssignment;
+
+public class week2CodingAssignmentsClass {
+
+	public static void main(String[] args) {
+		// boolean variables
+		boolean isHotOutside = true;
+		boolean isWeekday = false;
+		boolean hasMoneyInPocket = true;
+
+		// additional variables
+		double costOfMilk = 3.00;
+		double moneyInWallet = 100.00;
+		int thirstLevel = 5;
+
+		// created variables for different scenarios
+		boolean shouldBuyIcecream = isHotOutside && hasMoneyInPocket;
+		System.out.println(shouldBuyIcecream);
+		boolean willGoSwimming = isHotOutside && (isWeekday = true);
+		System.out.println(willGoSwimming);
+		boolean isAGoodDay = isHotOutside && hasMoneyInPocket && (isWeekday = true);
+		System.out.println(isAGoodDay);
+		boolean willBuyMilk = isHotOutside && (thirstLevel >= 3) && (moneyInWallet >= 2 * costOfMilk);
+		System.out.println(willBuyMilk);
+
+	}
+
+}
